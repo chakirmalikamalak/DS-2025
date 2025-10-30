@@ -1,5 +1,6 @@
 # RAPPORT D'ANALYSE APPROFONDIE DU PIB INTERNATIONAL
 **CHAKIR Malika Malak**
+![MMC](MMC.png)
 
 **Analyse Comparative Multi-Pays (2015-2024)**
 
@@ -515,3 +516,4 @@ print("✓ Indice base 100 calculé")
 
 df['Variation absolue vs 2015 (Md$)'] = df.apply(
     lambda row: row['PIB (Milliards USD)'] - p
+[graph](graph.png)
