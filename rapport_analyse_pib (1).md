@@ -1,5 +1,5 @@
 # RAPPORT D'ANALYSE APPROFONDIE DU PIB INTERNATIONAL
-
+CHAKIR Malika Malak
 **Analyse Comparative Multi-Pays (2015-2024)**
 
 ---
