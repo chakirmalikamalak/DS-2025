@@ -1,5 +1,5 @@
 # Rapport d'Analyse du PIB International
-
+CHAKIR Malika Malak
 ## 1. Descriptif du Travail
 
 ### Objectif de l'Analyse
