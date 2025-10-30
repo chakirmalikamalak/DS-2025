@@ -519,5 +519,5 @@ print("✓ Indice base 100 calculé")
 df['Variation absolue vs 2015 (Md$)'] = df.apply(
     lambda row: row['PIB (Milliards USD)'] - p
 
-<img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/6a4c3580-4cc5-422f-afff-05043e886670" />
 
+!<img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/bc5d6a76-21dd-4f87-aa27-da49fdc3a1b1" />
