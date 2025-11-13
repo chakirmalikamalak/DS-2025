@@ -1,105 +1,54 @@
-# Projet Bank Marketing
+# 📂 Jeu de Données : Bank Marketing
 
-## Description
-Le dataset "Bank Marketing" concerne les campagnes de marketing direct menées par téléphone par une institution bancaire portugaise. L'objectif est de prédire si un client souscrira un dépôt à terme (variable cible : y).
+Ce document présente les détails du jeu de données "Bank Marketing" provenant du UCI Machine Learning Repository, identifié par le DOI **10.24432/C5K306**.
 
-## Caractéristiques du Dataset
-- *Type* : Multivarié
-- *Nombre d'exemples* : 45 211
-- *Nombre de variables* : 16
-- *Types de variables* : Catégorielles, binaires et numériques
-- *Période des données* : Mai 2008 à novembre 2010
-- *Tâche principale* : Classification binaire (oui/non)
-- *Valeurs manquantes* : Aucune
+---
 
-## Variables clés
-- *age* : âge du client (numérique)
-- *job* : type d’emploi (catégoriel)
-- *marital* : statut marital (catégoriel)
-- *education* : niveau d’éducation (catégoriel)
-- *default* : crédit en défaut (binaire)
-- *balance* : solde moyen annuel en euros (numérique)
-- *housing* : prêt immobilier (binaire)
-- *loan* : prêt personnel (binaire)
-- *contact* : type de contact (catégoriel : cellular, telephone)
-- *day_of_week* : jour de la semaine du dernier contact
-- *month* : mois du dernier contact
-- *duration* : durée du dernier contact (secondes)
-- *campaign* : nombre de contacts durant la campagne
-- *pdays* : jours depuis dernier contact dans une campagne précédente
-- *previous* : nombre de contacts précédents dans d’autres campagnes
-- *poutcome* : résultat de la campagne précédente (catégoriel)
+## 🔑 Détails d'Identification
 
-## Objectif
-Prédire la souscription à un dépôt à terme (oui/non).
+| Attribut | Valeur |
+| :--- | :--- |
+| **Nom du Jeu de Données** | Bank Marketing |
+| **DOI** | `10.24432/C5K306` |
+| **Source** | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing) |
+| **Auteurs Principaux** | S. Moro, P. Rita, P. Cortez |
+| **Année de Publication** | 2012 |
+| **Licence** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 
-## Informations supplémentaires
-- *Créateurs* : Sérgio Moro, P. Cortez, P. Rita
-- *Licence* : Creative Commons Attribution 4.0 International (CC BY 4.0)
-- *Utilisation* : Études de machine learning et support décisionnel marketing.
+---
 
-## Références
-- Article de base : Sérgio Moro, P. Cortez & P. Rita (2014), Decision Support Systems.
-- DOI : [10.24432/C5K306](https://doi.org/10.24432/C5K306)
-- # Description des Champs du Jeu de Données Bank Marketing
+## 📝 Description du Jeu de Données
 
-- *age*  
-  Âge du client (entier).
+Ce jeu de données est relatif aux campagnes de **marketing direct** d'une institution bancaire portugaise. Ces campagnes étaient basées sur des appels téléphoniques.
 
-- *job*  
-  Type d'emploi (catégoriel) :  
-  "admin.", "blue-collar", "entrepreneur", "housemaid", "management",  
-  "retired", "self-employed", "services", "student", "technician",  
-  "unemployed", "unknown".
+L'objectif principal est de **prédire** si le client souscrira (la variable cible) à un **dépôt à terme** (a term deposit) après la campagne de marketing.
 
-- *marital*  
-  Statut marital (catégoriel) :  
-  "divorced" (divorcé ou veuf), "married", "single", "unknown".
+### 🎯 Variable Cible (Output)
 
-- *education*  
-  Niveau d'éducation (catégoriel) :  
-  "basic.4y", "basic.6y", "basic.9y", "high.school",  
-  "illiterate", "professional.course", "university.degree", "unknown".
+* `y` (binaire) : Le client a-t-il souscrit à un dépôt à terme ? (`yes` ou `no`)
 
-- *default*  
-  Crédit en défaut ? (binaire) : "yes", "no".
+### 📊 Exemples de Caractéristiques (Features)
 
-- *balance*  
-  Solde annuel moyen en euros (entier).
+Les données incluent des caractéristiques client (âge, profession, situation maritale, éducation, historique de crédit), des caractéristiques liées au dernier contact (type de communication, mois, jour de la semaine) et des caractéristiques liées aux campagnes précédentes.
 
-- *housing*  
-  Possède un prêt immobilier ? (binaire) : "yes", "no".
+* `age` (numérique)
+* `job` (catégorielle : `admin.`, `blue-collar`, `technician`, etc.)
+* `marital` (catégorielle : `married`, `single`, `divorced`)
+* `default` (catégorielle : a-t-il un crédit par défaut ? `yes`, `no`, `unknown`)
 
-- *loan*  
-  Possède un prêt personnel ? (binaire) : "yes", "no".
+---
 
-- *contact*  
-  Type de contact lors du dernier appel (catégoriel) :  
-  "cellular", "telephone", "unknown".
+## 🔗 Liens Utiles
 
-- *day*  
-  Jour du mois du dernier contact (entier).
+* **Lien Direct vers le Dataset (UCI):**
+    `https://archive.ics.uci.edu/dataset/222/bank+marketing`
+* **Lien DOI:**
+    `https://doi.org/10.24432/C5K306`
 
-- *month*  
-  Mois du dernier contact (catégoriel) :  
-  "jan", "feb", "mar", ..., "nov", "dec".
+---
 
-- *duration*  
-  Durée du dernier contact en secondes (entier).
+## 📖 Citation
 
-- *campaign*  
-  Nombre total de contacts effectués durant cette campagne pour ce client (entier).
+Si vous utilisez ce jeu de données dans votre travail, veuillez citer les auteurs originaux comme suit :
 
-- *pdays*  
-  Nombre de jours passés depuis le dernier contact lors d'une campagne précédente (entier) ;  
-  -1 signifie que le client n’a jamais été contacté auparavant.
-
-- *previous*  
-  Nombre de contacts avant cette campagne pour ce client (entier).
-
-- *poutcome*  
-  Résultat de la précédente campagne marketing (catégoriel) :  
-  "unknown", "other", "failure", "success".
-
-- *y*  
-  Variable cible : le client a-t-il souscrit un dépôt à terme ? (binaire) : "yes", "no".
+> **Moro, S., Rita, P., & Cortez, P. (2012).** A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 54(1), 30-41. **DOI: 10.24432/C5K306**
