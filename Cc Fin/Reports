@@ -1,1 +1,17 @@
+# Projet Marketing Bancaire (DOI: 10.24432/C5K306)
 
+## Présentation
+Ce projet porte sur des campagnes de marketing direct d'une banque portugaise, réalisées par appels téléphoniques. L'objectif est de prédire si un client souscrira à un dépôt à terme (variable cible : y).
+
+## Caractéristiques du Dataset
+- **Type** : Données multivariées
+- **Domaine** : Business / Marketing bancaire
+- **Tâche** : Classification
+- **Types de variables** : Categorical (catégorielles) et Integer (entiers)
+- **Nombre d'instances** : 45 211
+- **Nombre de variables** : 16
+
+## Description du Dataset
+- Basé sur des campagnes téléphoniques avec souvent plusieurs contacts par client.
+- But : prédire la souscription d’un dépôt à terme (oui/non).
+- Plusieurs versions du dataset disponibles (complet, sous
