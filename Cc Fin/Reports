@@ -1,17 +1,105 @@
-# Projet Marketing Bancaire (DOI: 10.24432/C5K306)
+# Projet Bank Marketing
 
-## Présentation
-Ce projet porte sur des campagnes de marketing direct d'une banque portugaise, réalisées par appels téléphoniques. L'objectif est de prédire si un client souscrira à un dépôt à terme (variable cible : y).
+## Description
+Le dataset "Bank Marketing" concerne les campagnes de marketing direct menées par téléphone par une institution bancaire portugaise. L'objectif est de prédire si un client souscrira un dépôt à terme (variable cible : y).
 
 ## Caractéristiques du Dataset
-- **Type** : Données multivariées
-- **Domaine** : Business / Marketing bancaire
-- **Tâche** : Classification
-- **Types de variables** : Categorical (catégorielles) et Integer (entiers)
-- **Nombre d'instances** : 45 211
-- **Nombre de variables** : 16
+- *Type* : Multivarié
+- *Nombre d'exemples* : 45 211
+- *Nombre de variables* : 16
+- *Types de variables* : Catégorielles, binaires et numériques
+- *Période des données* : Mai 2008 à novembre 2010
+- *Tâche principale* : Classification binaire (oui/non)
+- *Valeurs manquantes* : Aucune
 
-## Description du Dataset
-- Basé sur des campagnes téléphoniques avec souvent plusieurs contacts par client.
-- But : prédire la souscription d’un dépôt à terme (oui/non).
-- Plusieurs versions du dataset disponibles (complet, sous
+## Variables clés
+- *age* : âge du client (numérique)
+- *job* : type d’emploi (catégoriel)
+- *marital* : statut marital (catégoriel)
+- *education* : niveau d’éducation (catégoriel)
+- *default* : crédit en défaut (binaire)
+- *balance* : solde moyen annuel en euros (numérique)
+- *housing* : prêt immobilier (binaire)
+- *loan* : prêt personnel (binaire)
+- *contact* : type de contact (catégoriel : cellular, telephone)
+- *day_of_week* : jour de la semaine du dernier contact
+- *month* : mois du dernier contact
+- *duration* : durée du dernier contact (secondes)
+- *campaign* : nombre de contacts durant la campagne
+- *pdays* : jours depuis dernier contact dans une campagne précédente
+- *previous* : nombre de contacts précédents dans d’autres campagnes
+- *poutcome* : résultat de la campagne précédente (catégoriel)
+
+## Objectif
+Prédire la souscription à un dépôt à terme (oui/non).
+
+## Informations supplémentaires
+- *Créateurs* : Sérgio Moro, P. Cortez, P. Rita
+- *Licence* : Creative Commons Attribution 4.0 International (CC BY 4.0)
+- *Utilisation* : Études de machine learning et support décisionnel marketing.
+
+## Références
+- Article de base : Sérgio Moro, P. Cortez & P. Rita (2014), Decision Support Systems.
+- DOI : [10.24432/C5K306](https://doi.org/10.24432/C5K306)
+- # Description des Champs du Jeu de Données Bank Marketing
+
+- *age*  
+  Âge du client (entier).
+
+- *job*  
+  Type d'emploi (catégoriel) :  
+  "admin.", "blue-collar", "entrepreneur", "housemaid", "management",  
+  "retired", "self-employed", "services", "student", "technician",  
+  "unemployed", "unknown".
+
+- *marital*  
+  Statut marital (catégoriel) :  
+  "divorced" (divorcé ou veuf), "married", "single", "unknown".
+
+- *education*  
+  Niveau d'éducation (catégoriel) :  
+  "basic.4y", "basic.6y", "basic.9y", "high.school",  
+  "illiterate", "professional.course", "university.degree", "unknown".
+
+- *default*  
+  Crédit en défaut ? (binaire) : "yes", "no".
+
+- *balance*  
+  Solde annuel moyen en euros (entier).
+
+- *housing*  
+  Possède un prêt immobilier ? (binaire) : "yes", "no".
+
+- *loan*  
+  Possède un prêt personnel ? (binaire) : "yes", "no".
+
+- *contact*  
+  Type de contact lors du dernier appel (catégoriel) :  
+  "cellular", "telephone", "unknown".
+
+- *day*  
+  Jour du mois du dernier contact (entier).
+
+- *month*  
+  Mois du dernier contact (catégoriel) :  
+  "jan", "feb", "mar", ..., "nov", "dec".
+
+- *duration*  
+  Durée du dernier contact en secondes (entier).
+
+- *campaign*  
+  Nombre total de contacts effectués durant cette campagne pour ce client (entier).
+
+- *pdays*  
+  Nombre de jours passés depuis le dernier contact lors d'une campagne précédente (entier) ;  
+  -1 signifie que le client n’a jamais été contacté auparavant.
+
+- *previous*  
+  Nombre de contacts avant cette campagne pour ce client (entier).
+
+- *poutcome*  
+  Résultat de la précédente campagne marketing (catégoriel) :  
+  "unknown", "other", "failure", "success".
+
+- *y*  
+  Variable cible : le client a-t-il souscrit un dépôt à terme ? (binaire) : "yes", "no".
