@@ -1,1 +1,81 @@
+*COMPTE RENDU*
 
+1. winequality-red.csv
+Jeu de données sur 1 599 vins rouges portugais.
+Chaque ligne représente un vin, avec ses caractéristiques chimiques et sa note de qualité donnée par des experts.
+
+2. winequality-white.csv
+Jeu de données sur 4 898 vins blancs portugais, construits exactement de la même façon.
+
+3. winequality.names
+Document texte qui décrit le jeu de données :
+Objectif
+Variables
+Source
+Informations scientifiques
+Méthodologie
+
+Ce dataset est un jeu public utilisé dans la recherche en data mining (data science).
+QU’EST-CE QUE CE JEU DE DONNÉES ?
+Il s’agit du célèbre Wine Quality Dataset, créé en 2009 pour étudier la relation entre les caractéristiques chimiques du vin et son score de qualité (entre 0 et 10).
+Il est basé sur des vins produits dans la région Vinho Verde (Portugal).
+
+COMMENT LE JEU EST CONSTRUIT ?
+Chaque fichier CSV contient des observations (vins) et 12 variables :
+Variables d'entrée (physico-chimiques)
+fixed acidity
+volatile acidity
+citric acid
+residual sugar
+chlorides
+free sulfur dioxide
+total sulfur dioxide
+density
+pH
+sulphates
+alcohol
+Ce sont toutes des mesures scientifiques faites en laboratoire.
+Variable de sortie : qualité du vin
+quality (score entre 0 et 10, donné par des experts œnologues)
+Aucune valeur manquante.
+Les données sont prêtes pour le machine learning.
+
+POURQUOI CE JEU A ÉTÉ CRÉÉ ?
+Les auteurs (Cortez et al., 2009) avaient plusieurs objectifs :
+
+1. Créer un modèle capable de prédire la qualité d’un vin
+
+Grâce aux mesures chimiques, peut-on estimer la qualité sensorielle ?
+→ Très utile pour les producteurs qui veulent anticiper la qualité sans attendre les dégustations.
+
+2. Comprendre quelles caractéristiques influencent le plus la qualité
+Par exemple :
+L’alcool améliore la note
+L’acidité volatile la diminue
+etc.
+
+3. Fournir un benchmark pour les chercheurs
+Depuis 2009, ce dataset est devenu un standard pour tester :
+Modèles de régression
+Classifications
+Réseaux neuronaux
+Méthodes d’explicabilité (SHAP, LIME…)
+
+COMMENT CE JEU EST UTILISÉ EN PRATIQUE ?
+Pour l’apprentissage automatique (ML)
+Prédire la qualité du vin (régression)
+Classer un vin en “bon/moyen/mauvais” (classification)
+Pour tester des algorithmes
+Tous les étudiants et chercheurs en IA utilisent ce dataset pour :
+Entraîner des modèles
+Comparer plusieurs méthodes
+Évaluer la performance statistique
+Pour analyser la chimie du vin
+Comprendre quelles variables jouent un rôle important :
+Alcool (fort effet positif)
+Acide volatil (fort effet négatif)
+
+*Résumé final du compte rendu*
+Ton fichier contient le dataset Wine Quality, composé de vins rouges et blancs de la région Vinho Verde.
+Il a été conçu pour modéliser et prédire la qualité du vin à partir de mesures chimiques.
+C’est un dataset très populaire en data science, utilisé depuis 2009 pour l’apprentissage automatique, la recherche scientifique et la compréhension des facteurs influençant la qualité du vin.
